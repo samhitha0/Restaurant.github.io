@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juice World</title>
+    <link rel="stylesheet" href="project2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    
+    <div class="dark-mode-toggle">
+        <button id="toggleDarkMode"><i class="fas fa-moon"></i> Dark Mode</button>
+    </div>
+
+   
+    <header id="stickyHeader">
+        <h1><i class="fas fa-lemon"></i> Juice World</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <section id="search">
+        <input type="text" id="searchBar" placeholder="Search the menu...">
+        <button onclick="searchMenu()"><i class="fas fa-search"></i></button>
+    </section>
+
+    
+
+    
+    <section id="menu">
+        <h2><i class="fas fa-coffee"></i> Our Menu</h2>
+        <div class="menu-filters">
+            <button onclick="filterMenu('all')">All</button>
+            <button onclick="filterMenu('juice')">Juices</button>
+            <button onclick="filterMenu('coffee')">Coffees</button>
+            <button onclick="filterMenu('smoothie')">Smoothies</button>
+        </div>
+        <div class="menu-container">
+            
+            <div class="menu-item juice">
+                <img src="C:\Users\Basitha\Downloads\oj.jpg" alt="Orange Juice">
+                <div class="menu-info">
+                    <h3>Orange Juice</h3>
+                    <span>$15.00</span>
+                    <input type="checkbox" id="orange-juice-fav">
+                    <label for="orange-juice-fav"><i class="fas fa-heart"></i> Add to Favorites</label>
+                </div>
+            </div>
+            </div>
+        <div class="menu-container">
+           
+            <div class="menu-item juice">
+                <img src="C:\Users\Basitha\Downloads\oj.jpg" alt="Orange Juice">
+                <div class="menu-info">
+                    <h3>Orange Juice</h3>
+                    <span>$15.00</span>
+                    <input type="checkbox" id="orange-juice-fav">
+                    <label for="orange-juice-fav"><i class="fas fa-heart"></i> Add to Favorites</label>
+                </div>
+            </div>
+            <div class="menu-item juice">
+                <img src="C:\Users\Basitha\Downloads\aj.jpg" alt="Apple Juice">
+                <div class="menu-info">
+                    <h3>Apple Juice</h3>
+                    <span>$14.50</span>
+                    <input type="checkbox" id="apple-juice-fav">
+                    <label for="apple-juice-fav"><i class="fas fa-heart"></i> Add to Favorites</label>
+                </div>
+            </div>
+            <div class="menu-item juice">
+                <img src="C:\Users\Basitha\Downloads\bbj.jpg" alt="Berry Blast">
+                <div class="menu-info">
+                    <h3>Berry Blast</h3>
+                    <span>$16.00</span>
+                    <input type="checkbox" id="berry-blast-fav">
+                    <label for="berry-blast-fav"><i class="fas fa-heart"></i> Add to Favorites</label>
+                </div>
+            </div>
+           
+            <div class="menu-item coffee">
+                <img src="C:\Users\Basitha\Downloads\latte ju.jpg" alt="Latte">
+                <div class="menu-info">
+                    <h3>Latte</h3>
+                    <span>$13.50</span>
+                    <input type="checkbox" id="latte-fav">
+                    <label for="latte-fav"><i class="fas fa-heart"></i> Add to Favorites</label>
+                </div>
+            </div>
+            <div class="menu-item coffee">
+                <img src="C:\Users\Basitha\Downloads\essj.jpg" alt="Espresso">
+                <div class="menu-info">
+                    <h3>Espresso</h3>
+                    <span>$12.50</span>
+                    <input type="checkbox" id="espresso-fav">
+                    <label for="espresso-fav"><i class="fas fa-heart"></i> Add to Favorites</label>
+                </div>
+            </div>
+            <div class="menu-item coffee">
+                <img src="C:\Users\Basitha\Downloads\essj.jpg" alt="Cappuccino">
+                <div class="menu-info">
+                    <h3>Cappuccino</h3>
+                    <span>$14.00</span>
+                    <input type="checkbox" id="cappuccino-fav">
+                    <label for="cappuccino-fav"><i class="fas fa-heart"></i> Add to Favorites</label>
+                </div>
+            </div>
+            
+            <div class="menu-item smoothie">
+                <img src="C:\Users\Basitha\Downloads\green.jpg" alt="Green Smoothie">
+                <div class="menu-info">
+                    <h3>Green Smoothie</h3>
+                    <span>$17.00</span>
+                    <input type="checkbox" id="green-smoothie-fav">
+                    <label for="green-smoothie-fav"><i class="fas fa-heart"></i> Add to Favorites</label>
+                </div>
+            </div>
+            <div class="menu-item smoothie">
+                <img src="C:\Users\Basitha\Downloads\mango smoo.jpg" alt="Mango Smoothie">
+                <div class="menu-info">
+                    <h3>Mango Smoothie</h3>
+                    <span>$16.50</span>
+                    <input type="checkbox" id="mango-smoothie-fav">
+                    <label for="mango-smoothie-fav"><i class="fas fa-heart"></i> Add to Favorites</label>
+                </div>
+            </div>
+            <div class="menu-item smoothie">
+                <img src="C:\Users\Basitha\Downloads\sb smmoo.jpg" alt="Strawberry Banana Smoothie">
+                <div class="menu-info">
+                    <h3>Strawberry Banana Smoothie</h3>
+                    <span>$16.00</span>
+                    <input type="checkbox" id="strawberry-banana-smoothie-fav">
+                    <label for="strawberry-banana-smoothie-fav"><i class="fas fa-heart"></i> Add to Favorites</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="newsletter">
+        <h2><i class="fas fa-envelope"></i> Subscribe to Our Newsletter</h2>
+        <form id="newsletterForm">
+            <label for="newsletterEmail">Email:</label>
+            <input type="email" id="newsletterEmail" name="newsletterEmail" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+        </form>
+    </section>
+
+  
+    <section id="order">
+    <h2><i class="fas fa-shopping-cart"></i> Place Your Order</h2>
+    <form id="orderForm">
+        <label for="name"><i class="fas fa-user"></i> Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="address"><i class="fas fa-map-marker-alt"></i> Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="orderDetails"><i class="fas fa-list-alt"></i> Order Details:</label>
+        <textarea id="orderDetails" name="orderDetails" required></textarea>
+
+        <button type="submit"><i class="fas fa-paper-plane"></i> Submit Order</button>
+    </form>
+</section>
+
+    <section id="testimonials" class="testimonial-carousel">
+        <h2><i class="fas fa-comments"></i> What Our Customers Say</h2>
+        <div class="testimonial-item active">
+            <p><i class="fas fa-quote-left"></i> The best juice bar in town! Fresh and tasty drinks always make my day.</p>
+            <cite>- Emma</cite>
+        </div>
+        <div class="testimonial-item">
+            <p><i class="fas fa-quote-left"></i> Love the ambiance and the variety. Coffee and juice lovers' paradise!</p>
+            <cite>- Michael</cite>
+        </div>
+        <div class="testimonial-item">
+            <p><i class="fas fa-quote-left"></i> Quick service and amazing flavors. Highly recommend the Berry Blast!</p>
+            <cite>- Sarah</cite>
+        </div>
+        <div class="testimonial-controls">
+            <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+		
+    </section>
+	<Section>
+		<div id="orderConfirmation" class="modal">
+		<div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Order Confirmed!</h2>
+        <p>Thank you for your order. We will contact you shortly.</p>
+		</div>
+		</div>
+	
+    </section>
+	<section id="chatbox">
+    <button id="chatButton">Chat with Us</button>
+    <div id="chatWindow" style="display: none;">
+        <h3>Live Chat</h3>
+        <div id="chatMessages"></div>
+        <input type="text" id="chatInput" placeholder="Type your message...">
+        <button id="sendMessage">Send</button>
+    </div>
+</section>
+
+<section id="orderTracking">
+    <h2><i class="fas fa-truck"></i> Track Your Order</h2>
+    <form id="trackingForm">
+        <label for="orderNumber">Order Number:</label>
+        <input type="text" id="orderNumber" placeholder="Enter your order number">
+        <button type="submit"><i class="fas fa-search"></i> Track Order</button>
+    </form>
+    <div id="trackingResults"></div>
+</section>
+<section id="promotions">
+    <h2><i class="fas fa-tags"></i> Seasonal Promotions</h2>
+    <div class="promotion">
+        <h3>Summer Special</h3>
+        <p>Get 20% off on all smoothies! Use code SUMMER20 at checkout.</p>
+    </div>
+    <div class="promotion">
+        <h3>Buy One Get One Free</h3>
+        <p>Buy any coffee and get another one free! Offer valid until the end of the month.</p>
+    </div>
+</section>
+
+    <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+    <p>&copy; 2024 Juice World. All rights reserved.</p>
+    <div class="social-media">
+        <a href="#" data-platform="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" data-platform="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" data-platform="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" data-platform="youtube"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
